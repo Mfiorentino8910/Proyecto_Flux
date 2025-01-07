@@ -1,0 +1,1030 @@
+/* RESET CSS */
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;      
+}
+
+
+    
+/* ----------------------------------ESTILOS CONTENEDORES: DESKTOP---------------------------------- */
+.contenedor-principal{
+    background-image: url(/img/fondo_principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* -------------------ESTILO LOGO-PRINCIAPL:DESKTOP------------------- */
+.logo-principal img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 65px;
+    transition: 50s 50s; 
+}
+.menu-principal, .logo-principal{
+    position: fixed;
+    z-index: 1;
+}
+
+/* -------------------ESTILO DE MENU:DESKTOP------------------- */
+.menu-principal{
+    background-color: rgb(23,23,23);
+    width: 100%;
+    height: 60px;
+}
+.menu-principal .contenedor-menu{
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.contenedor-menu li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+}
+.contenedor-menu li a:hover{
+    color: rgb(0,255,188);
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-menu li{
+    list-style: none;
+}
+
+/* ----------------ESTILO DE IMG-TITULO-TEXT-BOTON-FLUX:INDEX---------------- */
+.contenedor-principal-img-titulo{
+    position: relative;
+    bottom: 50px;
+}
+.contenedor-titulo-boton{
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 230px;
+    margin-left: 70px;
+    top: 250px;
+}
+.contenedor-titulo-boton h1{
+   color:white;
+   margin-left: 10px;
+   font-size: 3.4rem;
+   display: inline-block;
+   letter-spacing: 5px;
+}
+.contenedor-titulo-boton p{
+    position: absolute;
+    margin-left: 10px;
+    top: 105px;
+    color:white;
+    font-size: 1.3rem;
+}
+.titulo-flux{
+    color: rgb(0,255,188);
+}
+.titulo-flux:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-titulo-boton .explore-our-blog{
+    position: absolute;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 35px;
+    top: 190px;
+    left: 10px;
+    border-color: rgb(0,255,188);
+    border-radius: 5px;
+    background-color: rgb(0,255,188);
+} 
+.explore-our-blog:hover{
+    box-shadow: 0 0 5px rgb(0,255,188);
+}
+
+/* -----------------ESTILO DE CONTENEDOR IMG----------------- */
+.contenedor-img-index{
+   position: relative;
+   margin-left: 720px;
+   bottom: 80px;
+}
+.contenedor-img-index img{
+    width: 550px;
+    height: 400px;
+}
+
+/* -----------------------------CONTENEDOR PRINCIPAL DE SECTION:DESKTOP----------------------------- */
+.contenedor-principal-section{
+    position: relative;
+    width: 100%;
+    height: 2370px;
+    background-color: rgb(23,23,23);
+}
+/* -----------------ESTILO CONTENEDOR PRINCIPAL DE SECTION:TITULO/HR:DESKTOP----------------- */
+.contenedor-principal-section h2{
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(0,255,188);
+}
+.contenedor-principal-section h2:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-principal-section hr{
+    width: 90%;
+    height: 0.8px;
+    background-color: rgb(0,255,188);
+}      
+
+/* -----------------ESTILO CONTENEDOR PRINCIPAL:PRINCIPAL-LEARNING-CODING-V.TUTORIAL-TECH-CERTIFICATIONS:DESKTOP----------------- */
+.contenedor-principal-coding{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    height: 450px;
+    gap: 70px;
+}
+/* -----------------ESTILO FILAS: PRINCIPAL-LEARNING-CODING-V.TUTORIAL-TECH-CERTIFICATIONS:DESKTOP----------------- */
+.contenedor-principal-coding .learning-paths, .contenedor-principal-coding .coding, .contenedor-principal-coding .video-tutorial, .contenedor-principal-coding .tech-certifications{
+    flex-direction: row;
+    width: 250px;
+    height:350px;   
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.learning-paths h2, .coding h2, .video-tutorial h2, .tech-certifications h2{
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    margin-left: 30px;
+    top: 140px;
+}
+.learning-paths p,.coding p, .video-tutorial p, .tech-certifications p{
+    position: absolute;
+    width: 190px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    top: 200px;
+}
+.contenido-promo-1 input{
+    position: absolute;
+    width: 105px;
+    height: 25px;
+    color: white;
+    bottom: 65px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+}
+.contenido-promo-1 h5{
+    position: absolute;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0,255,188);
+    margin-left: 30px;
+    top: 290px;
+}
+.contenido-promo-1 h5:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenido-promo-1 img{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 305px;
+    margin-left: 170px;
+}
+.contenido-promo-1 img:hover{
+    width: 65px;
+    height: 35px;
+}
+
+/* -----------------ESTILO DE CONTENEDOR PRINCIAPL ABOUT FLUX----------------- */
+.about-flux{
+    position: relative;
+    top: 450px;
+}
+.contenidoflux, .contenidoflux-2{
+    display: flex;
+    width: 540px;
+    flex-direction: row;
+    margin-left: 5%;
+    left: 90%;
+    margin-top: 20px;
+    gap: 30px;
+}
+.contenido-1{
+    width: 180px;
+    height: 150px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.contenedor-principal-about-flux p{
+    position: absolute;
+    width: 540px;
+    height: 70px;
+    top: 270px;
+    margin-left: 5%;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
+.contenido-2{
+    position: absolute;
+    width: 540px;
+    height: 150px;
+    top: 370px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.contenedor-h3{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;   
+}
+.contenedor-h3 h3{
+    font-size: 2.5rem;
+    margin-left: 48px;
+    color: rgb(0,255,188);
+}
+.contenedor-h3 h3:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-h6{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.contenedor-h6 h5{
+    position: relative;
+    margin-left: 50px;
+    bottom: 50px;   
+    color: white;
+}
+.contenedor-img-aboutflux{
+    position: relative;
+    display: inline-block;
+    left: 675px;
+    bottom: 170px;
+    width: 540px;
+    height:430px;
+}
+.contenedor-img-aboutflux img{ 
+    width: 540px;
+    height:430px;
+    filter: grayscale(90%);
+    border-radius: 30px;
+}
+
+
+/* ----------------- ----------------- */
+.latest-blog-posts{
+    position: relative;
+    top: 350px;
+    height: 650px;
+} 
+.contenedor-latest-img-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 5%;
+    gap: 80px;
+
+}
+.etiquetas-tech{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 40px 5px 5px 5px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    height: 500px;
+}
+.img-etiqueta-1, .img-etiqueta-2, .img-etiqueta-3{
+    width: 350px;
+    height: 250px;   
+    filter: grayscale(90%);
+    border-radius: 40px 5px 0px 0px;
+}
+.etiquetas-tech h3{
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+.etiquetas-tech h3:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.etiquetas-tech input{
+    width: 90px;
+    height: 25px;
+    font-size: 0.8rem;
+    color: white;
+    position: relative;
+    bottom: 30px;
+    margin-left: 5px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 50px;    
+}
+.etiquetas-tech h4{
+    color: white;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+}
+.etiquetas-tech h5{
+    color: white;
+    width: 300px;
+    margin-left: 30px;
+}
+.etiquetas-tech h6{
+    position: absolute;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0,255,188);
+    margin-left: 30px; 
+}
+.etiquetas-tech h6:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+
+
+/*------- ESTILO DE CONTENEDOR DE COMENTARIOS -------*/
+.what-our-readers-say{
+    position: relative;
+    top: 400px;
+    height: 430px;
+    background-color: rgb(23,23,23);
+}
+.contenedor-ppal-comentarios{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    left: 5%;
+    top: 130px;
+    gap: 20px;
+    height: 300px;
+} 
+.comentarios{
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.contenedor-pppal-correo{
+    background-image: url(/img/fondo_principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+/* .ppal-division-correo{
+    
+} */
+
+
+
+
+
+
+
+
+
+
+/* -----------------------ESTILOS CONTENEDORES: DESKTOP-NOTEBOOK--------------------------------- */
+@media screen and (min-width: 960px) and (max-width: 1280px){
+    
+/* ----------------------------------ESTILOS CONTENEDORES: DESKTOP---------------------------------- */
+.contenedor-principal{
+    background-image: url(/img/fondo_principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/* -------------------ESTILO LOGO-PRINCIAPL:DESKTOP------------------- */
+.logo-principal img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 65px;
+    transition: 50s 50s; 
+}
+.menu-principal, .logo-principal{
+    position: fixed;
+    z-index: 1;
+}
+    
+/* -------------------ESTILO DE MENU:DESKTOP------------------- */
+.menu-principal{
+    background-color: rgb(23,23,23);
+    width: 100%;
+    height: 60px;
+}
+.menu-principal .contenedor-menu{
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 680px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.contenedor-menu li a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+}
+.contenedor-menu li a:hover{
+    color: rgb(0,255,188);
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-menu li{
+    list-style: none;
+}
+    
+/* ----------------ESTILO DE IMG-TITULO-TEXT-BOTON-FLUX:INDEX---------------- */
+.contenedor-principal-img-titulo{
+    position: relative;
+    bottom: 50px;
+}
+.contenedor-titulo-boton{
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    height: 230px;
+    margin-left: 70px;
+    top: 250px;
+}
+.contenedor-titulo-boton h1{
+    color:white;
+    margin-left: 10px;
+    font-size: 3.4rem;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+.contenedor-titulo-boton p{
+    position: absolute;
+    margin-left: 10px;
+    top: 105px;
+    color:white;
+    font-size: 1.3rem;
+}
+.titulo-flux{
+    color: rgb(0,255,188);
+}
+.titulo-flux:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-titulo-boton .explore-our-blog{
+    position: absolute;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 35px;
+    top: 190px;
+    left: 10px;
+    border-color: rgb(0,255,188);
+    border-radius: 5px;
+    background-color: rgb(0,255,188);
+} 
+.explore-our-blog:hover{
+    box-shadow: 0 0 5px rgb(0,255,188);
+}
+    
+/* -----------------ESTILO DE CONTENEDOR IMG----------------- */
+.contenedor-img-index{
+    position: relative;
+    margin-left: 680px;
+    bottom: 80px;
+}
+.contenedor-img-index img{
+    width: 530px;
+    height: 400px;
+}
+    
+/* -----------------------------CONTENEDOR PRINCIPAL DE SECTION:DESKTOP----------------------------- */
+.contenedor-principal-section{
+    position: relative;
+    width: 100%;
+    height: 2370px;
+    background-color: rgb(23,23,23);
+}
+/* -----------------ESTILO CONTENEDOR PRINCIPAL DE SECTION:TITULO/HR:DESKTOP----------------- */
+.contenedor-principal-section h2{
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(0,255,188);
+}
+.contenedor-principal-section h2:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-principal-section hr{
+    width: 90%;
+    height: 0.8px;
+    background-color: rgb(0,255,188);
+}      
+    
+/* -----------------ESTILO CONTENEDOR PRINCIPAL:PRINCIPAL-LEARNING-CODING-V.TUTORIAL-TECH-CERTIFICATIONS:DESKTOP----------------- */
+.contenedor-principal-coding{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    height: 450px;
+    gap: 70px;
+}
+/* -----------------ESTILO FILAS: PRINCIPAL-LEARNING-CODING-V.TUTORIAL-TECH-CERTIFICATIONS:DESKTOP----------------- */
+.contenedor-principal-coding .learning-paths, .contenedor-principal-coding .coding, .contenedor-principal-coding .video-tutorial, .contenedor-principal-coding .tech-certifications{
+    flex-direction: row;
+    width: 250px;
+    height:350px;   
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.learning-paths h2, .coding h2, .video-tutorial h2, .tech-certifications h2{
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    margin-left: 30px;
+    top: 140px;
+}
+.learning-paths p,.coding p, .video-tutorial p, .tech-certifications p{
+    position: absolute;
+    width: 190px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    top: 200px;
+}
+.contenido-promo-1 input{
+    position: absolute;
+    width: 105px;
+    height: 25px;
+    color: white;
+    bottom: 65px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+}
+.contenido-promo-1 h5{
+    position: absolute;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0,255,188);
+    margin-left: 30px;
+    top: 290px;
+}
+.contenido-promo-1 h5:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenido-promo-1 img{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 305px;
+    margin-left: 170px;
+}
+.contenido-promo-1 img:hover{
+    width: 65px;
+    height: 35px;
+}
+    
+/* -----------------ESTILO DE CONTENEDOR PRINCIAPL ABOUT FLUX----------------- */
+.about-flux{
+    position: relative;
+    top: 450px;
+}
+.contenidoflux, .contenidoflux-2{
+    display: flex;
+    width: 540px;
+    flex-direction: row;
+    margin-left: 5%;
+    left: 90%;
+    margin-top: 20px;
+    gap: 30px;
+}
+.contenido-1{
+    width: 180px;
+    height: 150px;
+    left: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.contenedor-principal-about-flux p{
+    position: absolute;
+    width: 540px;
+    height: 70px;
+    top: 270px;
+    margin-left: 5%;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: justify;
+    letter-spacing: 1.5px;
+}
+.contenido-2{
+    position: absolute;
+    width: 540px;
+    height: 150px;
+    top: 370px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.contenedor-h3{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;   
+}
+.contenedor-h3 h3{
+    font-size: 2.5rem;
+    margin-left: 48px;
+    color: rgb(0,255,188);
+}
+.contenedor-h3 h3:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.contenedor-h6{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.contenedor-h6 h5{
+    position: relative;
+    margin-left: 50px;
+    bottom: 50px;   
+    color: white;
+}
+.contenedor-img-aboutflux{
+    position: relative;
+    display: inline-block;
+    left: 610px;
+    bottom: 170px;
+    width: 540px;
+    height:430px;
+}
+.contenedor-img-aboutflux img{ 
+    width: 540px;
+    height:430px;
+    filter: grayscale(90%);
+    border-radius: 30px;
+}
+    
+    
+/* -----------------ESTILO CONTENEDOR: LATEST-BLOGG-POST ----------------- */
+.latest-blog-posts{
+    position: relative;
+    top: 350px;
+    height: 650px;
+} 
+.contenedor-latest-img-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 5%;
+    gap: 50px;
+}
+.etiquetas-tech{
+    background-color: rgba(15, 15, 15, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 40px 5px 5px 5px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    height: 500px;
+}
+.img-etiqueta-1, .img-etiqueta-2, .img-etiqueta-3{
+    width: 350px;
+    height: 250px;   
+    filter: grayscale(90%);
+    border-radius: 40px 5px 0px 0px;
+}
+.etiquetas-tech h3{
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+.etiquetas-tech h3:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+.etiquetas-tech input{
+    width: 90px;
+    height: 25px;
+    font-size: 0.8rem;
+    color: white;
+    position: relative;
+    bottom: 30px;
+    margin-left: 5px;
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 50px;    
+}
+.etiquetas-tech h4{
+    color: white;
+    margin-left: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+}
+.etiquetas-tech h5{
+    color: white;
+    width: 300px;
+    margin-left: 30px;
+}
+.etiquetas-tech h6{
+    position: absolute;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(0,255,188);
+    margin-left: 30px; 
+}
+.etiquetas-tech h6:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+    
+    
+/*------- ESTILO DE CONTENEDOR DE COMENTARIOS -------*/
+    .what-our-readers-say{
+    position: relative;
+    top: 400px;
+    height: 430px;
+    background-color: rgb(23,23,23);
+}
+.contenedor-ppal-comentarios{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    left: 5%;
+    top: 130px;
+    gap: 20px;
+    height: 300px;
+} 
+.comentarios{
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+    
+.contenedor-pppal-correo{
+    background-image: url(/img/fondo_principal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+/* .ppal-division-correo{
+        
+} */
+}
+
+
+@media screen and (min-width: 440px) and (max-width: 926px){
+
+} 
+ 
+
+
+
+
+
+/* -----------------ESTILO DE LOGIN-PAGE-FLUX----------------- */
+.body-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.contenedor{
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.contenedor span{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background-color: rgb(0,220,150);
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg/50)));
+    animation: blink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+
+@keyframes blink{
+    0%{
+        box-shadow: 0 0 5px rgb(0,255,188);
+    }
+    25%{
+        box-shadow: 0 0 5px rgb(0,255,188);
+    }
+}
+
+.login-box{
+    position: absolute;
+    width: 400px;
+}
+
+.form-login{
+    width: 100%;
+    padding: 0 50px;
+}
+
+.titulo-login{
+    font-size: 2rem;
+    font-family: "Black Ops One", serif;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 0 0 5px rgb(0,255,188);
+    color: rgb(0,220,150);
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    margin: 25px 0;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.log {
+    width: 65%;
+    height: 20px;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: transparent;
+    border: 2px solid rgb(0,220,150);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: white;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+
+.log:focus{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
+
+.log-label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;  
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.log:focus~.log-label{
+    top: -9px;
+    font-size: .9em;
+    font-weight: bold;
+    background-color: black; 
+    padding: 0 5px;
+    color: white;
+}
+
+.forgot-pass{
+    margin: -15px 0 10px;
+    text-align: center;
+}
+
+.forgot-pass a{
+    font-size: .85em;
+    position: relative;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn{
+    width: 75%;
+    height: 25px;
+    background: rgb(0,255,188);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px rgb(0,255,188);
+}
+
+.signup-link{
+    margin: 20px 0 10px;
+    position: relative;
+    left: 125px;
+    font-family: "Black Ops One", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.signup-link a{
+    font-size: 1em;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+}
