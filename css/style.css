@@ -10,7 +10,7 @@ body{
     
 /* ----------------------------------ESTILOS CONTENEDORES: DESKTOP---------------------------------- */
 .contenedor-principal{
-    background-image: url(/img/fondo_principal.jpg);
+    background-image: url(/FLUX/img/fondo_principal.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ body{
     position: absolute;
     display: inline-block;
     font-weight: bold;
-    margin-left: 750px;
+    margin-left: 60%;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -159,13 +159,33 @@ body{
 /* -----------------ESTILO FILAS: PRINCIPAL-LEARNING-CODING-V.TUTORIAL-TECH-CERTIFICATIONS:DESKTOP----------------- */
 .contenedor-principal-coding .learning-paths, .contenedor-principal-coding .coding, .contenedor-principal-coding .video-tutorial, .contenedor-principal-coding .tech-certifications{
     flex-direction: row;
-    width: 250px;
-    height:350px;   
+    width: 290px;
+    height:390px;   
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: solid 1px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
+.learning-paths img, .coding img, .video-tutorial img{
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 60px;
+    margin-left: 30px;
+}
+.tech-certifications img{
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 90px;
+    margin-left: 30px;
+}
+
+.learning-paths img:hover, .coding img:hover, .video-tutorial img:hover, .tech-certifications img:hover{
+    filter: drop-shadow(1px 1px 5px rgb(0,255,188));
+}
+
+
 .learning-paths h2, .coding h2, .video-tutorial h2, .tech-certifications h2{
     position: absolute;
     font-size: 1rem;
@@ -188,7 +208,7 @@ body{
     width: 105px;
     height: 25px;
     color: white;
-    bottom: 65px;
+    bottom: 105px;
     left: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
@@ -203,21 +223,20 @@ body{
     text-align: center;
     color: rgb(0,255,188);
     margin-left: 30px;
-    top: 290px;
+    top: 320px;
 }
 .contenido-promo-1 h5:hover{
-    text-shadow: 0 0 5px rgb(0,255,188);
+    filter: 0 0 5px rgb(0,255,188);
 }
 .contenido-promo-1 img{
     position: absolute;
-    width: 60px;
-    height: 30px;
-    top: 305px;
-    margin-left: 170px;
+    width: 35px;
+    height: 20px;
+    top: 340px;
+    margin-left: 220px;
 }
 .contenido-promo-1 img:hover{
-    width: 65px;
-    height: 35px;
+    filter: drop-shadow(1px 1px 5px rgb(0,255,188));
 }
 
 /* -----------------ESTILO DE CONTENEDOR PRINCIAPL ABOUT FLUX----------------- */
@@ -294,11 +313,11 @@ body{
     display: inline-block;
     left: 675px;
     bottom: 170px;
-    width: 540px;
+    width: 675px;
     height:430px;
 }
 .contenedor-img-aboutflux img{ 
-    width: 540px;
+    width: 675px;
     height:430px;
     filter: grayscale(90%);
     border-radius: 30px;
@@ -316,26 +335,25 @@ body{
     flex-direction: row;
     margin-top: 45px;
     margin-left: 5%;
-    gap: 80px;
-
+    gap: 100px;
 }
 .etiquetas-tech{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     border-radius: 40px 5px 5px 5px;
     border: solid 1px rgba(255, 255, 255, 0.1);
-    width: 350px;
-    height: 500px;
+    width: 380px;
+    height: 520px;
 }
 .img-etiqueta-1, .img-etiqueta-2, .img-etiqueta-3{
-    width: 350px;
+    width: 380px;
     height: 250px;   
     filter: grayscale(90%);
     border-radius: 40px 5px 0px 0px;
 }
 .etiquetas-tech h3{
     margin-left: 30px;
-    margin-top: 25px;
+    margin-top: 30px;
     font-size: 0.7rem;
     color: white;
     font-weight: bold;
@@ -403,11 +421,11 @@ body{
     width: 90%;
     left: 5%;
     top: 130px;
-    gap: 20px;
+    gap: 50px;
     height: 300px;
 } 
 .comentarios{
-    width: 400px;
+    width: 450px;
     height: 250px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
@@ -415,8 +433,9 @@ body{
     border-radius: 20px;
 }
 
+/* -----------------------ESTILO DE BLOQUE ENVIO-DE-CORREO------------------------ */
 .contenedor-pppal-correo{
-    background-image: url(/img/fondo_principal.jpg);
+    background-image: url(/FLUX/img/fondo_principal.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -424,11 +443,167 @@ body{
     width: 100%;
     height: 80%;
 }
-/* .ppal-division-correo{
-    
-} */
+.ppal-division-correo{
+    position: relative;
+    top: 450px;
+    width: 190vh;
+    margin-left: 35px;
+    height: 600px;
+} 
+.detalle-correo{
+    position: absolute;
+    width: 95vh;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 20px 0px 0px 20px;
+}
+.detalle-correo h2, .ingreso-correo h2{
+    position: relative;
+    font-size: 2.2rem;
+    bottom: 20px;
+}
+.detalle-correo hr, .ingreso-correo hr{
+    position: absolute;
+    top: 60px;
+    left: 5%;
+}
+.detalle-correo p{
+    color: white;
+    position: absolute;
+    width: 85vh;
+    left: 5vh;
+    top: 80px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: justify;
+}
+.contenedor-socialink{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+    width: 6vh;
+    gap: 30px;
+    height: 300px;
+    top: 100px;
+} 
+.contenedor-socialink .img-socialink{
+    width: 40px;
+}
+.contenedor-socialink .img-socialink:hover{
+    filter: drop-shadow(1px 1px 5px rgb(0,255,188));
+}
+.contenedor-text-socialink{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 16%;
+    width: 30vh;
+    gap: 17px;
+    height: 300px;
+    bottom: 210px;
+}
+.text-socialink{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.text-socialink-websitvisite{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(0,255,188);
+} 
+.text-socialink-websitvisite:hover{
+    text-shadow: 0 0 5px rgb(0,255,188);
+}
 
 
+/* --------------PROGRAMAR MAÑANA------------------ */
+.ingreso-correo{
+    position: absolute;
+    width: 90vh;
+    left: 95vh;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 0px 20px 20px 0px;
+}
+.contenedor-correo{
+    position: absolute;
+    top: 100px;
+    width: 85vh;
+    height: 450px;
+}
+.form-correo-flux{
+    width: 100%;
+    padding: 0 50px;
+}
+.input-correo{
+    position: relative;
+    margin: 45px 0;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.env{
+    width: 75%;
+    height: 35px;
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: transparent;
+    border: 2px solid rgb(0,220,150);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    color: white;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+
+.env-correo{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;  
+    font-family: "Black Ops One", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+.env:focus~.env-correo{
+    top: -9px;
+    font-size: .9em;
+    font-weight: bold;
+    background: transparent;
+    padding: 0 5px;
+    color: white;
+
+}
+.env-correo:hover{
+    color: transparent;
+}
+.correo-btn{
+    width: 82%;
+    height: 35px;
+    background: rgb(0,255,188);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+.correo-btn:hover{
+    box-shadow: 0 0 5px rgb(0,255,188);
+}
 
 
 
@@ -1027,4 +1202,38 @@ body{
     outline: none;
     color: white;
     font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* ------------------------ESTILO-PAGE-BLOG-FLUX------------------------ */
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+}
+
+canvas{
+    display: block;
+} */
+
+.bodyscene{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+#scene{
+    width: 98vmin;
+    height: 98vmin;
 }

@@ -1,22 +1,60 @@
+<?php
+session_start();
+$mysqli = new mysqli("localhost", "usuario", "Dantu8910", "usuario");
+
+if ($mysqli->connect_error) {
+    die("Conexión fallida: " . $mysqli->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $stmt = $mysqli->prepare("SELECT password FROM usuarios WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->store_result();
+
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($hashed_password);
+        $stmt->fetch();
+
+        if (password_verify($password, $hashed_password)) {
+            $_SESSION['username'] = $username;
+            echo "Inicio de sesión exitoso. Bienvenido, " . $username . "!";
+        } else {
+            echo "Contraseña incorrecta.";
+        }
+    } else {
+        echo "No existe un usuario con ese nombre.";
+    }
+
+    $stmt->close();
+}
+$mysqli->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/FLUX/css/style.css">
+
     <title>flux-login</title>
 </head>
+
 <body class="body-login">   
+
     <div class="contenedor">
         <div class="login-box">
             <h2 class="titulo-login">Login</h2>
-            <form class="form-login" action="#">
+            <form class="form-login" action="#" method="post">
                 <div class="input-box">
-                    <input class="log" type="email" name="" id="">
+                    <input class="log" type="email" name="username" id="">
                     <label class="log-label" for="Email">Email</label>
                 </div>
                 <div class="input-box">
-                    <input class="log" type="password">
+                    <input class="log" type="password" name="password">
                     <label class="log-label" for="Password"></label>
                 </div>
                 <div class="forgot-pass">
